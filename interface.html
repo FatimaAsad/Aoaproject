@@ -1,0 +1,82 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+
+
+<script type="text/javascript" src="js/jquary-3.4.0.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!--<script>
+function lcs(a, b) {
+  var aSub = a.substr(0, a.length - 1);
+  var bSub = b.substr(0, b.length - 1);
+ 
+  if (a.length === 0 || b.length === 0) {
+    return '';
+  } else if (a.charAt(a.length - 1) === b.charAt(b.length - 1)) {
+    return lcs(aSub, bSub) + a.charAt(a.length - 1);
+  } else {
+    var x = lcs(a, bSub);
+    var y = lcs(aSub, b);
+    return (x.length > y.length) ? x : y;
+  }
+}</script>-->
+<title>PlagiarismChecker</title>
+</head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107521779-6"></script>
+
+
+
+<body>
+<section class="custom-bnr">
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+<div class="carousel-inner">
+<div class="carousel-item active"><img class="col-md-12" height="500px" src="123.jpg">
+<div class="container">
+<div class="col-md-7 col-sm-12 float-md-right">
+<div class="carousel-caption dp-caption">
+<h1><b>Plagiarism checker</b></h1>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+<section class="cheque-paper">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<h2>Enter Text to Check Plagiarism</h2>
+</div>
+</div>
+<div class="row">
+<div class="col-md-9">
+<form class="file-upload-content" >
+<input type="hidden" name="_token" >
+<div class="form-group">
+<textarea class="form-control" id="exampleFormControlTextarea1" rows="9" placeholder="Copy and paste to check Plagiarised Content"  onkeyup="textCounter(this,'counter',1000);" name="sample_text"></textarea>
+<span id = "counter"></span>
+<button type="button" class="btn btn-primary" id = "check-text-btn">CHECK Plagiarism</button>
+<button type="button" class="btn btn-primary" id = "check-text-btn">CHECK Grammer</button>
+</div>
+
+</form>
+
+</div>
+</div></div>
+</section>
+
+
+
+
+
+
+
+</body>
+</html>
